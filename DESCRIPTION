@@ -12,3 +12,5 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
 Imports: 
     reticulate
+URL: https://github.com/curso-r/shiny.firebase
+BugReports: https://github.com/curso-r/shiny.firebase/issues
