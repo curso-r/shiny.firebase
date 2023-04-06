@@ -12,6 +12,11 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Imports: 
     reticulate,
-    shiny
+    shiny,
+    shinyjs,
+    cookies,
+    httpuv,
+    stringi,
+    devtools
 URL: https://github.com/curso-r/shiny.firebase
 BugReports: https://github.com/curso-r/shiny.firebase/issues
