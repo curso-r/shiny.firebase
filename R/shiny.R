@@ -15,7 +15,11 @@ uiFirebase <- function(ui) {
         name = "ui"
       )
       res <- try(
-        firebaseAdmin$auth$verify_id_token(token, firebaseAdmin$get_app("ui")),
+        firebaseAdmin$auth$verify_id_token(
+          token,
+          app = firebaseAdmin$get_app("ui"),
+          check_revoked = TRUE
+        ),
         silent = TRUE
       )
       firebaseAdmin$delete_app(firebaseAdmin$get_app("ui"))
