@@ -5,7 +5,7 @@ login = function() {
     .then(function(user){
       firebase.auth().currentUser.getIdToken(true).then(function(token) {
       Cookies.set("firebase_token", token);
-      location.replace(window.location.protocol + '//' + window.location.hostname + ':' + window.location.port);
+      location.replace("https://acursor.shinyapps.io/firebaseShinyApp");
 });
     }).catch(function(error){
      var codigoErro = error.code;
