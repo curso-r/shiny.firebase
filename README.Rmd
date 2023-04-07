@@ -1,0 +1,23 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# shiny.firebase
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+First version of the package is in its final stage of development. It will be soon be available here and on Cran.
+
+Here is a little demo app: https://acursor.shinyapps.io/firebaseShinyApp/
