@@ -1,7 +1,3 @@
-ensure_loaded <- function() {
-  invisible(tf$`__version__`)
-}
-
 parseCookies <- function(cookie) {
   if (is.null(cookie) || nchar(cookie) == 0) {
     return(list())
@@ -23,4 +19,13 @@ parseCookies <- function(cookie) {
   cookieNames <- vapply(cookieList, "[[", character(1), 1)
   names(decodedCookies) <- cookieNames
   decodedCookies
+}
+
+modify_file <- function(file, envir) {
+  text <- readLines(file)
+  text <- purrr::map_chr(
+    text,
+    ~ glue::glue(.x, .envir = envir, .open = "{{", .close = "}}")
+  )
+  writeLines(text, file)
 }
