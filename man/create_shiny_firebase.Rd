@@ -7,7 +7,9 @@
 create_shiny_firebase(path, overwrite = FALSE)
 }
 \arguments{
-\item{overwrite}{}
+\item{path}{Path where the app file will be created.}
+
+\item{overwrite}{Logical. Overwrite files if they exist. Defaults to FALSE.}
 }
 \description{
 Create shiny firebase app
