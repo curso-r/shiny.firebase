@@ -1,7 +1,8 @@
 library(shiny)
 
 ui <- fluidPage(
-  titlePanel("It works!")
+  titlePanel("It works!"),
+  shiny.firebase::firebaseLogoutButton()
 )
 
 server <- function(input, output, session) {
