@@ -1,9 +1,0 @@
-///////////////////////////////////////////////////////
-// Paste your web app's Firebase configuration below //
-///////////////////////////////////////////////////////
-
-
-
-// Initialize Firebase
-// Don't modify the code below
-firebase.initializeApp(firebaseConfig);
