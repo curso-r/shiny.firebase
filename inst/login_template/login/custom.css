@@ -1,0 +1,30 @@
+body{
+  background-color: #428bca;
+  padding-top: 2%;
+}
+
+.btn-primary{
+  background-color: #3674a8;
+  border-color: #3674a8;
+}
+
+.btn-primary:hover {
+  background-color: #3674a8cc;
+  border-color: #3674a8cc;
+}
+
+.btn-secondary {
+  background-color: #668994;
+  border-color: #668994;
+}
+
+.btn-secondary:hover {
+  background-color: #668994cc;
+  border-color: #668994cc;
+}
+
+.form-group i {
+  margin-left: -30px;
+  cursor: pointer;
+  display: inline
+}
