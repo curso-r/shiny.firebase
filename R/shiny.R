@@ -25,7 +25,7 @@ uiFirebase <- function(ui) {
     if (methods::is(token, "try-error") | is.null(token)) {
       shiny::tags$script(shiny::HTML('location.replace("login/index.html");'))
     } else {
-      firebaseAdmin <- init_firebase_admin()
+      firebaseAdmin <- firebase_env$firebaseAdmin
       credentials <- firebaseAdmin$credentials$Certificate("serviceAccountKey.json")
       firebaseAdmin$initialize_app(
         credential = credentials,
@@ -58,7 +58,7 @@ serverFirebase <- function(server) {
   function(input, output, session) {
 
     appname <- paste0("server", stats::runif(1))
-    firebaseAdmin <- init_firebase_admin()
+    firebaseAdmin <- firebase_env$firebaseAdmin
     firebaseAdmin$initialize_app(
       credential = firebaseAdmin$credentials$Certificate("serviceAccountKey.json"),
       options = list('databaseURL'= NULL),
